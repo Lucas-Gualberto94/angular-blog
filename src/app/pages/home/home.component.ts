@@ -3,6 +3,7 @@ import { MenuTitleComponent } from '../../components/menu-title/menu-title.compo
 import { CardComponent } from '../../components/card/card.component';
 import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
 
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -12,4 +13,4 @@ import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
 })
 export class HomeComponent {
 
-}
+  }

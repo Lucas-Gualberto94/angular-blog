@@ -1,4 +1,5 @@
 <div class="container__card">
+  <a [routerLink]="['content', Id]">
   <div class="card__photo">
     <img
       src="{{ cardPhoto }}"
@@ -15,5 +16,6 @@
   <div class="card__description">
     <p>{{ cardDescription }}</p>
   </div>
+</a>
 
 </div>
