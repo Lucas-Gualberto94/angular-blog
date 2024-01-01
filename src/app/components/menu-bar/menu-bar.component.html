@@ -1,10 +1,11 @@
 <div class="container__menu-bar">
   <ul>
-    <li><a href=""><button>Technology</button></a></li>
-    <li><a href=""><button>Science</button></a></li>
-    <li><a href=""><button>Education</button></a></li>
-    <li><a href=""><button>Philosophy</button></a></li>
-    <li><a href=""><button>Travel</button></a></li>
+    <li><button (click)="filterByCategory(null)">All</button></li>
+    <li><button (click)="filterByCategory('technology')">Technology</button></li>
+    <li><button (click)="filterByCategory('science')">Science</button></li>
+    <li><button (click)="filterByCategory('education')">Education</button></li>
+    <li><button (click)="filterByCategory('philosophy')">Philosophy</button></li>
+    <li><button (click)="filterByCategory('travel')">Travel</button></li>
   </ul>
 
 </div>

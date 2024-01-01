@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { dataFake } from '../../data/dataFake';
 
+
 @Component({
   selector: 'app-content',
   standalone: true,
@@ -33,8 +34,5 @@ export class ContentComponent implements OnInit {
       this.contentTitle = result.title
       this.contentText = result.text
       this.contentImg = result.photo
-
     }
-
-
 }

@@ -18,7 +18,7 @@
   list-style: none;
 }
 
-.container__menu-bar > ul > li > a > button{
+.container__menu-bar > ul > li > button{
   background-color: #F3C37D;
   font-size: 1.5rem;
   border-radius: 10px;

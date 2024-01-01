@@ -18,8 +18,4 @@ export class CardComponent {
   cardDescription:string = ""
   @Input()
   Id:string= "0"
-
-
-
-
 }

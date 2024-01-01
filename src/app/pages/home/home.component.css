@@ -1,6 +1,7 @@
 .container__articles{
   margin: 2rem;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap; /* para quebrar para a próxima linha em telas menores */
   justify-content: space-around;
   padding: 10 px;

@@ -1,7 +1,7 @@
 .container__card {
   border: solid #F3C37D 2px;
   width: 300px;
-
+  max-width: 300px;
   border-radius: 5px;
   margin: 20px 5px;
 
