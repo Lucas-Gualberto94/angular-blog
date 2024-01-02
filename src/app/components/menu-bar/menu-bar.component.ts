@@ -13,7 +13,7 @@ export class MenuBarComponent implements OnInit {
   dataFake = dataFake;
 
 ngOnInit(): void {
-  //pegar o
+
 }
 
 filterByCategory(category: string | null): void {

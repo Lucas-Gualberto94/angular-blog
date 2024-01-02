@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ContentComponent } from './pages/content/content.component';
+import { ScienceReligionComponent } from './pages/contentsBlog/science-religion/science-religion.component';
+import { AllKnowledgeComponent } from './pages/contentsBlog/all-knowledge/all-knowledge.component';
+import { DecideComponent } from './pages/contentsBlog/decide.component';
 
 export const routes: Routes = [
   {
@@ -8,7 +10,13 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path:'content/:id',
-    component: ContentComponent
-  }
+    path: '1',
+    component: ScienceReligionComponent,
+    resolve: { Component: DecideComponent},
+  },
+  {
+    path: '2',
+    component: AllKnowledgeComponent,
+    resolve: { Component: DecideComponent},
+  },
 ];

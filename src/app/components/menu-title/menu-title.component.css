@@ -6,10 +6,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  color: #F3C37D;
 }
 
 .container__menu-title > p {
   margin: 1rem;
+  font-size: 2rem;
   text-align: justify;
   text-indent: 40px;
 }
@@ -23,5 +25,8 @@
 @media  (max-width:600px) {
   .container__menu-title > h1{
     font-size: 2.5rem;
+  }
+  .container__menu-title > p{
+    font-size: 1.3rem;
   }
 }

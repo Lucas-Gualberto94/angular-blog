@@ -15,7 +15,5 @@ export class CardComponent {
   @Input()
   cardTitle:string = ""
   @Input()
-  cardDescription:string = ""
-  @Input()
-  Id:string= "0"
+  id:string= "0"
 }

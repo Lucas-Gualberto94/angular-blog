@@ -1,5 +1,5 @@
 <div class="container__card">
-  <a [routerLink]="['content', Id]">
+  <a [routerLink]="[id]">
   <div class="card__photo">
     <img
       src="{{ cardPhoto }}"
@@ -11,10 +11,6 @@
 
   <div class="card__title">
     <h1>{{ cardTitle }}</h1>
-  </div>
-
-  <div class="card__description">
-    <p>{{ cardDescription }}</p>
   </div>
 </a>
 
