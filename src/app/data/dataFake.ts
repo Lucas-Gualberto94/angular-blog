@@ -13,13 +13,13 @@ export const dataFake = [
   },
   {
     "id": "3",
-    "photo": "./../../assets/khun1.jpg",
+    "photo": "./assets/khun1.jpg",
     "title": "Thomas Kuhn Theory",
     "category": "philosophy",
   },
   {
     "id": "4",
-    "photo": "./../../assets/popper1.png",
+    "photo": "/assets/popper1.png",
     "title": "Karl Popper Theory",
     "category": "philosophy",
   },
