@@ -1,0 +1,52 @@
+<div class="container__content">
+
+  <div class="content__photo">
+    <img src="./assets/gitGithub2.png" alt="test">
+  </div>
+  <div class="content__title">
+    <h1>O que são Git e GitHub e para que servem?</h1>
+  </div>
+  <div class="content__text">
+    <p>
+      Antes de entendermos o que são git e git hub, precisamos entender o que é versionamento de código
+      no mundo da programação. <strong>O versionamento de código</strong> é o controle e gerenciamento das alterações
+      feitas no código fonte de um software ao longo do tempo. Ele permite que os desenvolvedores criem
+      ramificações (branches) para trabalhar em funcionalidades ou correções separadamente, sem
+      interferir na versão principal do projeto. Essas ramificações são mescladas (merged) ao projeto
+      principal quando prontas.
+    </p>
+    <p>
+      O <strong>Git</strong> é um exemplo de sistema de controle de versão amplamente utilizado na
+      indústria de desenvolvimento de software. Ele é um sistema de controle de versão distribuido
+      (DVCS), na qual cada repositório é duplicado, possibilitando um fluxo de trabalho flexivel, ja
+      que o desenvolvedor pode mexer no código mesmo que esteja fora do ar. Outra vantagem é a copia
+      (clone) do repositório completo, o que inclui o histórico de versões. Em outras palavras, a copia
+      é como um backup.
+    </p>
+    <p>
+      Ja o <strong>GitHub</strong> é uma plataforma web baseada em Git que facilita o gerenciamento e
+      a colaboração em projetos de desenvolvimento de software. O GitHub permite que desenvolvedores
+      hospedem e gerenciem repositórios, colaborem com outros desenvolvedores, visto que a comunidade
+      ativa, onde é possivel encontrar  projetos interessantes, contribuir para projetos de código
+      aberto (open source projects) e aprender com outros profissionais.
+    </p>
+    <h2>Como funciona o Git</h2>
+    <p>
+      Através de comandos Git utilizados no terminal (linha de comando), conseguimos interagir com o
+      sistema de controle de versão Git. Existem diversos comandos, dentre eles os mais comuns durantes
+      uma aplicação são: o <strong>git clone</strong>, na qual copia um repositório Git existente (remoto,
+      por exemplo hospedado no GitHub) para um novo diretório (pasta) local (nesse caso o computador do
+      desenvolvedor); o <strong>git add</strong> que adiciona alterações feitas localmente ao "staging
+      area", preparando-as para serem registradas no próximo commit, o <strong> git commit</strong> para
+      gravar alterações adicionandas ao repositório local (criando uma nova versão), acompanhadas de uma
+      mensagem que descreve as mudanças feitas; para enviar essas alterações para o servidor (por exemplo,
+      no github), primeiro se utliza o <strong>git pull</strong> (checkar se alguem fez alguma alteração
+      no código no servidor) para “puxar” as alterações do repositório remoto para o local (busca e
+      mescla) e em seguida é utlizado o <strong>git push</strong> que “empurra” as alterações do
+      repositório local para o remoto.
+    </p>
+
+  </div>
+  <a [routerLink]="['']"> << VOLTAR </a>
+
+</div>

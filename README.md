@@ -1,27 +1,30 @@
-# AngularBlog
+# Creating a personal Blog using Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+## A fully functional EXAMPLE project written in Angular showing its main concepts
 
-## Development server
+This project is an example that was built along with an  Bootcamp offered by digital innovation one (DIO) showing how to create a blog using the main concepts of Angular such as dynamic data, route, services, type. Every part of this project is sample code which shows how:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    * to work with data dynamically
+    * to work with routes in angular
+    * to work with services in angular
+    * to type data using typescript 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="" width="200" height="200" />      
+<img src="" width="200" height="200" />     
+<img src="" width="200" height="200" />
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How to tweak this project for your own uses
+Since this is an example project, I´d encourage you to clone and rename this project to use for your own purposes.
 
-## Running unit tests
+## 📖 Useful links
+- [Bootcamp offered by DIO] (https://web.dio.me/track/7a55c727-bb2a-42a7-831b-6c38b4e83868)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-[Working Blog] (https://lucas-gualberto94.github.io/angular-blog/)
 
-## Running end-to-end tests
+## Find a bug?
+If you found an issue or would like to submit an improvement to this project, please submit an issue using the issue tab above. If you would like to submit a PR with a fix, reference the issue you created! 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Known issues (work in progress)
+This personal blog is till ongoing. There are lots of information and customization about the cards that have not been completed yet. This is coming soon!

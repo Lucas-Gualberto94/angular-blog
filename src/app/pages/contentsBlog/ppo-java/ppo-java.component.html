@@ -1,0 +1,91 @@
+<div class="container__content">
+
+  <div class="content__photo">
+    <img src="./assets/poo2.png" alt="test">
+  </div>
+  <div class="content__title">
+    <h1>Programação Orientada a Objetos (PPO) em Java</h1>
+  </div>
+  <div class="content__text">
+    <p>
+    A programação orientada a objetos (POO) é um núcleo da programação Java, na qual é usada para
+    projetar um programa usando classes e objetos. POO também podem ser caracterizados como controle
+    de dados para acesso ao código. Nesta abordagem, os programadores definem o tipo de dados (atributos)
+    de uma estrutura de dados e os comportamentos(métodos) que serão aplicadas à estrutura de dados.
+    </p>
+    <p>
+      A POO organiza um programa em esquemas básicos e reutilizáveis de código chamados de classes.
+      Essas classes são então usadas e reutilizadas para criar objetos novos e exclusivos com funções
+      semelhantes. Principios essenciais da PPO são: abstração; Classes e objetos; Atributos, Métodos
+      e Mensagens; Herança e Associação; Encapsulamento; Polimorfismo; Interfaces.
+    </p>
+    <h2>Classes</h2>
+    <p>
+      Classes são tipos de dados (estruturas) definidos pelo usuário para serem usados como modelo para
+      criar objetos, contendo atributos e métodos individuais. <strong>Atributos </strong> são definidos
+      na declaração de uma classe e representam uma propriedade ou característica de um objeto. Todos os
+      dados do objeto são armazenados em atributos. Enquanto o atributo define as caracteristicas de uma
+      classe, os <strong>métodos</strong> definem o comportamento dela. São exemplos de comportamento:
+      realizar alguma atividade dentro da própria classe; modificar o valor de algum atributo; obter o
+      valor de algum atributo; ativar métodos em outros objetos.
+
+    </p>
+    <p>
+      Na imagem acima podemos atribuir o cão/cachorro como uma classe, que é um molde para cada cachorro
+      (objeto) criado/definido pelo usuário. Todo cachorro possui certas propriedades como, por exemplo,
+      raça e cor. Os cachorros também apresentam certos tipos de comportamentos como latir e correr.
+      Abaixo contém uma classe <strong>cachorro</strong> definida com as propriedades e métodos citados
+      acima:
+    </p>
+    <img src="./assets/poo3.png" alt="classe">
+    <h2>Objetos</h2>
+    <p>
+      Objetos são os resultados obtidos a partir de uma classe, ou simplesmente instâncias de uma
+      classe. Na maioria das vezes representa uma entidade do mundo real e contém dados e
+      comportamentos. Na imagem abaixo criamos um objeto chamado <strong>meuCachorro</strong> com
+      suas propriedades e em seguida chamamos seus métodos:
+    </p>
+    <img src="./assets/poo4.png" alt="objeto">
+    <h2>Encapsulamento</h2>
+    <p>
+      Encapsular signifca separar o programa em partes, em <strong>cápsulas autocontidas</strong>,
+      tornando-o mais flexível. Desta forma: promove-se a <strong>reutilização do código</strong> e
+      a segurança; o programa se torna <strong>mais fácil de modificar</strong> e de dar manutenção.
+    </p>
+    <h2>Herança</h2>
+    <p>
+      Herança é um mecanismo que permite que características comuns a diversas classes sejam fatoradas
+      em uma classe base, ou superclasse. A partir de uma classe base, outras classes podem ser
+      especificadas. Cada classe derivada ou subclasse apresenta as características (atributos e
+      métodos) da classe base e acrescenta a elas o que for definido de particularidade para ela. Em
+      outras palavras, uma classe herda atributos e métodos de outra classe.
+    </p>
+    <h2>Polimorfismo</h2>
+    <p>
+      O polimorfismo refere-se à capacidade de objetos de diferentes classes serem tratados de maneira
+      uniforme, proporcionando flexibilidade e reutilização de código. . Esse mecanismo é fundamental
+      na programação orientada a objetos, permitindo definir funcionalidades que operem genericamente
+      com objetos, abstraindo-se de seus detalhes particulares quando esses não forem necessários.
+      Existem dois tipos principais de polimorfismo: polimorfismo de sobrecarga e polimorfismo de
+      sobrescrita.
+    </p>
+    <p>
+      O <strong>polimorfismo de sobrecarga (overloading)</strong> ocorre quando duas ou mais funções
+      em uma mesma classe têm o mesmo nome, mas diferentes listas de parâmetros. O compilador ou
+      interpretador escolhe a função correta com base nos parâmetros fornecidos durante a chamada. Na
+      imagem abaixo a classe calculadora tem dois métodos "somar", um para inteiros e outro para numeros
+      de pontos flutuantes.
+    </p>
+    <img src="./assets/poo5.png" alt="exemplo de polimorfismo de sobrecarga">
+    <p>
+      O <strong>polimorfismo de sobrescrita (override)</strong> ocorre quando uma classe derivada
+      (subclasse) fornece uma implementação específica para um método que já está definido em sua classe
+      base (superclasse). Isso permite que objetos da subclasse sejam usados no lugar de objetos da
+      superclasse. Na imagem abaixo, as classes "Cachorro" e "Gato" sobrescrevem o método "fazerSom" da
+      classe base "Animal". Isso permite chamar "fazerSom" em uma instância de "Animal" e obter o
+      comportamento específico da subclasse.
+    </p>
+    <img src="./assets/poo6.png" alt="exemplo de polimorfismo de sobrescrita">
+  </div>
+  <a [routerLink]="['']"> << VOLTAR </a>
+</div>
