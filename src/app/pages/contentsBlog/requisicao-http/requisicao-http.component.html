@@ -1,0 +1,57 @@
+<div class="container__content">
+
+  <div class="content__photo">
+    <img src="./assets/http2.png" alt="test">
+  </div>
+  <div class="content__title">
+    <h1>Requisição HTTP e fetch API</h1>
+  </div>
+  <div class="content__text">
+    <p>
+      Uma requisição HTTP - Hypertext Transfer Protocol - é um pedido enviado por um cliente/usuario a
+      um servidor web para solicitar algum recurso. Esses recursos podem incluir diferentes tipos de
+      dados como documentos HTML, imagens, arquivos de estilo, scripts, etc. O protocolo HTTP é usado
+      para comunicação entre clientes e servidores na World Wide Web.
+    </p>
+    <p>
+      Os <strong>métodos</strong> de uma requisição HTTP indica a ação que o cliente deseja realizar.
+      Os mais comuns são:
+    </p>
+    <ol>
+      <li>
+        <strong>GET</strong> para obter dados do servidor;
+      </li>
+      <li>
+        <strong>POST</strong> para enviar dados para o servidor (geralmente utilizados para enviar
+        dados de formulários e cadastros);
+      </li>
+      <li>
+        <strong>PUT</strong> para atualizar um recurso existente no servidor;
+      </li>
+      <li>
+        <strong>DELETE</strong> para excluir algo no servidor.
+      </li>
+    </ol>
+    <p>
+      o Método <strong>Fetch</strong> é uma API moderna para fazer requisições HTTP em JavaScript. Ele
+      fornece uma maneira mais flexível e poderosa para trabalhar com solicitações e respostas HTTP.
+      A Fetch API retorna <strong>Promises</strong>, que são objetos que representam o resultado
+      eventual (ou falha) de uma operação assíncrona, possuindo 3 estados: pendente, resolvida
+      (fulfilled) e rejeitada. Isso simplifica o tratamento de requisições assíncronas e torna o
+      código mais legível (facil de entender e escrever). Isso é especialmente útil quando você precisa
+      realizar várias operações em sequência.
+    </p>
+    <p>
+      A <strong>resposta (Response)</strong> retornada por fetch() contém várias informações sobre a requisição,
+      incluindo o corpo da resposta, status, cabeçalhos, etc. O método json() da Response retorna
+      uma Promise que resolve para o corpo da resposta parseado como JSON.
+    </p>
+    <p>
+      O fetch oferece melhor suporte para trabalhar com cabeçalhos (headers) de requisição e resposta.
+      É possivel definir e manipular headers de forma mais eficiente. Também suporta facilmente
+      diferentes métodos HTTP citados acima.
+    </p>
+
+  </div>
+  <a [routerLink]="['']"> << VOLTAR </a>
+</div>
