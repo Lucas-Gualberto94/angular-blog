@@ -10,7 +10,7 @@ This project is an example that was built along with an  Bootcamp offered by dig
     * to type data using typescript 
 
 
-<img src="./src/assets/blog1.png" width="600" height="400" /> <img src="./src/assets/blog2.png" width="600" height="400" />     
+<img src="./src/assets/blog1.png" width="800" height="500" />     
 
 ## How to tweak this project for your own uses
 Since this is an example project, I´d encourage you to clone and rename this project to use for your own purposes.
