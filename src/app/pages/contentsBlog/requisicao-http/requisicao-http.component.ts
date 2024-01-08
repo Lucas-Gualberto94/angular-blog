@@ -20,4 +20,6 @@ export class RequisicaoHttpComponent implements OnInit {
       this.resolvedComponent = data['component'];
     });
   }
+
+  
 }

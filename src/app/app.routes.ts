@@ -8,6 +8,7 @@ import { KhunTheoryComponent } from './pages/contentsBlog/khun-theory/khun-theor
 import { PopperTheoryComponent } from './pages/contentsBlog/popper-theory/popper-theory.component';
 import { GitGithubComponent } from './pages/contentsBlog/git-github/git-github.component';
 import { PpoJavaComponent } from './pages/contentsBlog/ppo-java/ppo-java.component';
+import { RequisicaoHttpComponent } from './pages/contentsBlog/requisicao-http/requisicao-http.component';
 
 export const routes: Routes = [
   {
@@ -16,12 +17,12 @@ export const routes: Routes = [
   },
   {
     path: '1',
-      component: GitGithubComponent,
+      component: PpoJavaComponent,
       resolve: { Component: DecideComponent},
   },
   {
     path: '2',
-      component: PpoJavaComponent,
+      component: RequisicaoHttpComponent,
       resolve: { Component: DecideComponent},
   },
   {
@@ -35,12 +36,17 @@ export const routes: Routes = [
     resolve: { Component: DecideComponent},
   },
   {
-  path: '5',
+    path: '5',
+      component: GitGithubComponent,
+      resolve: { Component: DecideComponent},
+  },
+  {
+  path: '6',
     component: KhunTheoryComponent,
     resolve: { Component: DecideComponent},
   },
   {
-    path: '6',
+    path: '7',
       component: PopperTheoryComponent,
       resolve: { Component: DecideComponent},
   },

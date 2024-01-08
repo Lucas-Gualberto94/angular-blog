@@ -10,10 +10,8 @@ This project is an example that was built along with an  Bootcamp offered by dig
     * to type data using typescript 
 
 
-<img src="" width="200" height="200" />      
-<img src="" width="200" height="200" />     
-<img src="" width="200" height="200" />
-
+<img src="./src/assets/blog1.png" width="200" height="200" />      
+<img src="./src/assets/blog2.png" width="200" height="200" />     
 
 ## How to tweak this project for your own uses
 Since this is an example project, I´d encourage you to clone and rename this project to use for your own purposes.

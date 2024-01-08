@@ -4,7 +4,7 @@
     <img src="./assets/http2.png" alt="test">
   </div>
   <div class="content__title">
-    <h1>Requisição HTTP e fetch API</h1>
+    <h1>Requisição HTTP e método fetch no JavaScript</h1>
   </div>
   <div class="content__text">
     <p>
@@ -33,24 +33,35 @@
       </li>
     </ol>
     <p>
-      o Método <strong>Fetch</strong> é uma API moderna para fazer requisições HTTP em JavaScript. Ele
-      fornece uma maneira mais flexível e poderosa para trabalhar com solicitações e respostas HTTP.
-      A Fetch API retorna <strong>Promises</strong>, que são objetos que representam o resultado
-      eventual (ou falha) de uma operação assíncrona, possuindo 3 estados: pendente, resolvida
+      o Método <strong>Fetch</strong> é uma função nativa do JavaScript utilizada para fazer requisições
+      HTTP assíncronas. Ele fornece uma maneira mais flexível e poderosa para trabalhar com solicitações
+      e respostas HTTP. A Fetch API retorna <strong>Promises</strong>, que são objetos que representam o
+      resultado eventual (ou falha) de uma operação assíncrona, possuindo 3 estados: pendente, resolvida
       (fulfilled) e rejeitada. Isso simplifica o tratamento de requisições assíncronas e torna o
       código mais legível (facil de entender e escrever). Isso é especialmente útil quando você precisa
       realizar várias operações em sequência.
     </p>
     <p>
-      A <strong>resposta (Response)</strong> retornada por fetch() contém várias informações sobre a requisição,
-      incluindo o corpo da resposta, status, cabeçalhos, etc. O método json() da Response retorna
-      uma Promise que resolve para o corpo da resposta parseado como JSON.
+      O método "fetch" aceita um ou dois argumentos, sendo o primeiro obrigatório, uma URL da requisição.
+      Já o segundo argumento é opcional, podendo ser um obeto de opções que pode ser usado para configurar
+      a requisição, como adicionar cabeçalhos (headers) ou definir o método HTTP. Abaixo se encontra um
+      modelo de como passar os argumentos para o fetch.
     </p>
+    <img src="./assets/http3.png" alt="aplicação do método fetch">
     <p>
-      O fetch oferece melhor suporte para trabalhar com cabeçalhos (headers) de requisição e resposta.
-      É possivel definir e manipular headers de forma mais eficiente. Também suporta facilmente
-      diferentes métodos HTTP citados acima.
+       O <strong> objeto resposta (Response)</strong> retornado por fetch() contém várias informações
+       sobre a requisição, incluindo o corpo da resposta, status, cabeçalhos, etc. Esse objeto possui
+       métodos que peritem acessar o corpo de resposta de diferentes maneiras. O mais utilizado é o
+       <strong>método json()</strong> que retorna uma Promise que resolve para o corpo da resposta
+       parseado como JSON. O <strong>método .then</strong> é usado para encadear operações assíncronas.
+       No contexto do fetch, é comumente utilizado para manipular a resposta da requisição e realizar
+       ações após o término da requisição. O <strong>método catch</strong> é usado para lidar com
+       possíveis erros que podem ocorrer durante o processamento da Promise. Abaixo se encontra um
+       modelo de como utilizar o fetch e seus principais métodos.
     </p>
+    <img src="./assets/http4.png" alt="uso dos metodos json e then">
+
+
 
   </div>
   <a [routerLink]="['']"> << VOLTAR </a>
