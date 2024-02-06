@@ -1,0 +1,95 @@
+<div class="container__content">
+
+  <div class="content__photo">
+    <img src="./assets/crudJS2.png" alt="test">
+  </div>
+  <div class="content__title">
+    <h1>What is a CRUD and how to build in JavaScript</h1>
+  </div>
+  <div class="content__text">
+    <p> Para aqueles que almejam trabalhar com desenvolvimento de software, desenvolver CRUDs é sem
+      duvidas uma boa maneira de aprender e testar seus conhecimentos em determinada stack. Mas afinal,
+      o que é CRUD? Crud é um acrônimo que representa as quatro operações básicas realizadas em sistemas
+      de gerenciamento de banco de dados ou qualquer tipo de sistema que envolva armazenamento de dados.
+      As quatro operações são:
+    </p>
+    <ol>
+      <li>
+        <strong>Criação (Create):</strong> Refere-se à criação de novos registros ou entradas no
+        sistema. Isso envolve a adição de novos dados ao banco de dados.
+      </li>
+      <li>
+        <strong>Leitura (Read):</strong> Envolve a recuperação ou leitura de dados existentes no
+        sistema. Isso permite que os usuários visualizem ou obtenham informações armazenadas.
+      </li>
+      <li>
+        <strong>Atualização (update):</strong>  Refere-se à modificação ou atualização de dados
+        existentes no sistema. Isso envolve fazer alterações em registros ou entradas já existentes.
+      </li>
+      <li>
+        <strong>Exclusão (Delete):</strong> Envolve a remoção de dados existentes no sistema. Isso
+        exclui registros ou entradas do banco de dados.
+      </li>
+    </ol>
+
+    <h2>Exemplo de CRUD em JavaScript</h2>
+      <p>
+        Nessa seção vamos explorar como construir um CRUD em JavaScript, fornecendo uma visão prática
+        e abrangente para a aplicação destes princípios no desenvolvimento web. Para demonstração dos
+        conceitos, criaremos um formulário de cadastro simples, onde esperaremos que o usuário forneça
+        o nome e a idade.
+      </p>
+      <p>Como primeiro passo, iremos desenvolver o layout e a parte HTML, para em seguida implementar as
+      funcionalidades (lógica JavaScript) esperadas. Para a criação do formulário iremos utilizar o
+      o form. O label é uusado para indicar o que o usuário precisa digitar e o input para receber essa
+      informação. Por fim, adicionaremos um botão (button) para que quando acionado, ele crie um novo
+      registro. Logo após o form iremos criar uma lista não ordernada ul. Note que ela se encontra vazia,
+      pois os elementos dessa lista serão criados dinamicamente após a criação de novos registros.
+      </p>
+      <img src="./assets/crudJS3.png" alt="classe">
+      <p>
+        Agora iremos adicionar a lógica a esse formulário. Para a constrção do CRUD precisaremos criar
+        uma função para cada uma das operações e definir um evento de envio do formulário. Primeiramente,
+        é preciso criar um código que permita acessar e manipular o formulário e a lista ul. Para isso
+        utilizaremos a função document.getElementById e armazenaremos em variaveis. Precisaremos também
+        criar um array vazio (records) que será usado para armazenar ou manipular os registros.
+      </p>
+      <p>
+        Em seguida criaremos a função addRecord responsável por adicionar novos registros. Essa função
+        precisará receber dois parametros que será fornecido pelo usuário nos inputs do formulario, o
+        nome e a idade. Esses parametros serão armazenamos em uma nova variável (record) que será
+        adicionado ao array como um elemento através do método push. Ao ser adicionado ao array records,
+        precisamos chamar a função displayRecords() (será criada posteriormente) que atualizará os
+         registros.
+      </p>
+      <img src="./assets/crudJS4.png" alt="classe">
+      <p>
+        O próximo passo será a criação da função displayRecords(). A primeira tarefa é limpar o conteúdo
+        anterior. Por fim estéticos, ao ser atualizado adicionaremos um título lista de Registros h2 que
+        será apresentado na tela antes dos registros adicionados. Por último, aplicaremos um forEach
+        para criar um li para cada elemento do array records - usando o document.createElement(‘li’).
+        Para cada li será adicionado um html apresentando o nome, idade e botões para editar e excluir
+        o registro. Importante salientar que, tanto para o h2 quanto para os elementos li, é preciso
+        defini-los como filhos do elemento ul.
+      </p>
+      <img src="./assets/crudJS5.png" alt="classe">
+      <p>
+        Para a função de editar (editRecord), precisaremos receber o parametro index pra saber qual elemento do array
+        precisaremos alterar. Para a alteração utilizaremos o comando prompt e o novo valor será adicionado
+        ao array records. Ja para a função de deletar (deleteRecord), usaremos o método splice para remover o
+        elemento correspondente do array records.
+      </p>
+      <img src="./assets/crudJS6.png" alt="classe">
+      <p>
+        Por fim, precisaremos criar um evento de escuta, para armazenar os valores de nome e idade ao
+        ser clickado o botão - ocorrer o submit - e, em seguida, chamar a função addRecord para criar
+        o novo registro.
+      </p>
+      <img src="./assets/crudJS7.png" alt="classe">
+      <p>
+        Depois desse exemplo, tente replicar e posteriormente aplicar os conceitos em diferentes
+        propostas.
+      </p>
+  </div>
+  <a [routerLink]="['']"> << VOLTAR </a>
+</div>
